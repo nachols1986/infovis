@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="//d3plus.org/js/d3.js"></script>
+<script src="//d3plus.org/js/d3plus.js"></script>
+
+<div id="viz"></div>
+
+<script>
+var data = [
+    {"value": 62, "name": "Ingeniero Electrico"},
+    {"value": 1046, "name": "Ingeniero Electronico"},
+    {"value": 30, "name": "Ingeniero en Armas"},
+    {"value": 370, "name": "Ingeniero en Informatica"},
+    {"value": 259, "name": "Ingeniero en Petroleo"},
+    {"value": 3220, "name": "Ingeniero Industrial"},
+    {"value": 495, "name": "Ingeniero Mecanico"},
+    {"value": 7, "name": "Ingeniero Metalurgico"},
+    {"value": 93, "name": "Ingeniero Naval"},
+    {"value": 508, "name": "Ingeniero Quimico"},
+    {"value": 338, "name": "Lic.en Administracion y Sistemas"},
+    {"value": 110, "name": "Licenciado en Analisis de Sistemas"},
+    {"value": 1, "name": "Licenciado en Ciencias Meteorologicas"},
+    {"value": 16, "name": "Licenciado en Hidrografia"},
+    {"value": 88, "name": "Licenciado en Informatica"},
+    {"value": 115, "name": "Licenciado en Oceanografia"}
+  ]
+  d3plus.viz()
+    .container("#viz")
+    .data(data)
+    .type("tree_map")
+    .id("name")
+    .size("value")
+    .format("es_ES")
+    .color("value")
+    .draw()
+</script>
+</body>
+</html>
