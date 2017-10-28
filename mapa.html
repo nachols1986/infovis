@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport"/>
-<title>Direcciones2 - Google Fusion Tables</title>
+<title>Direcciones - Google Fusion Tables</title>
 <style type="text/css">
 html, body, #googft-mapCanvas {
   height: 600px;
@@ -24,8 +24,8 @@ html, body, #googft-mapCanvas {
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '500px';
-    mapDiv.style.height = isMobile ? '100%' : '300px';
+    mapDiv.style.width = isMobile ? '100%' : '60px';
+    mapDiv.style.height = isMobile ? '100%' : '600px';
     var map = new google.maps.Map(mapDiv, {
       center: new google.maps.LatLng(-34.5700508, -58.4728009),
       zoom: 10,
